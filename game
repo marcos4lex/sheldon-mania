@@ -62,7 +62,7 @@ int main (){
 				printf("FOI UM EMPATE!!\n");
 			
 			
-				//Condição de vitoria de pedra sobre lagarto
+			   //Condição de vitoria de pedra sobre lagarto
 			   else if(jogador == 1 && computador == 4 || computador == 1 && jogador == 4) {
 			       if(jogador == 1){
 			       		printf("Computador escolheu LAGARTO");
@@ -79,8 +79,8 @@ int main (){
 				   }			    	
 			   }
 				
-				//Condição de vitoria de pedra sobre tesoura
-			    else if(jogador == 1 && computador == 3 || computador == 1 && jogador == 3) {
+			   //Condição de vitoria de pedra sobre tesoura
+			   else if(jogador == 1 && computador == 3 || computador == 1 && jogador == 3) {
 			        if(jogador == 1) {
 			        	printf("Computador escolheu TESOURA");
 			        	barra();
@@ -181,7 +181,7 @@ int main (){
 				   }			    	
 			   }
 			   
-			    //Condição de vitoria de lagarto sobre papel
+			   //Condição de vitoria de lagarto sobre papel
 			   else if(jogador == 4 && computador == 2 || computador == 4 && jogador == 2) {
 			        if(jogador == 4) {
 			        	printf("Computador escolheu PAPEL");
@@ -198,7 +198,7 @@ int main (){
 					}			        
 			   }
 			   
-			    //Condição de vitoria de spock sobre tesoura
+			   //Condição de vitoria de spock sobre tesoura
 			   else if(jogador == 5 && computador == 3 || computador == 5 && jogador == 3) {
 			       if(jogador == 5) {
 			       		printf("Computador escolheu TESOURA");
@@ -232,10 +232,10 @@ int main (){
 					}			        
 			   }
 			
-				  printf("\nDigite 's' para jogar novamente, ou tecle enter duas vezes para sair.\n");
-		    	scanf("%s", &jogarNovamente);
-		    	fflush(stdin);
-				  system("clear||cls");
+				printf("\nDigite 's' para jogar novamente, ou tecle enter duas vezes para sair.\n");
+		    		scanf("%s", &jogarNovamente);
+		    		fflush(stdin);
+				system("clear||cls");
 		} 		while (jogarNovamente == 's' || jogarNovamente == 'S');	
 	
 	return 0;	
