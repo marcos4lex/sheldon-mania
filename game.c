@@ -22,7 +22,7 @@ int main (){
 			printf("3. TESOURA\n");
 			printf("4. LAGARTO\n");
 			printf("5. SPOCK\n");
-			printf("\nEscolha um n√∫mero sabiamente meu caro: ");
+			printf("\nEscolha um n˙mero sabiamente meu caro: ");
 			scanf("%d", &jogador);
 			printf("\n____________________________________\n\n");
 			
@@ -49,7 +49,7 @@ int main (){
 					break;
 	
 				default:
-					printf("OP√á√ÉO INV√ÅLIDA VOC√ä ESCOLHEU MEU CARO PADAWAN, TENTE OUTRA VEZ!!\n");
+					printf("OP«√O INV¡LIDA VOC  ESCOLHEU MEU CARO PADAWAN, TENTE OUTRA VEZ!!\n");
 				}
 		
 			
@@ -232,7 +232,7 @@ int main (){
 					}			        
 			   }
 			
-				printf("\nDigite 's' para jogar novamente, ou tecle enter duas vezes para sair.\n");
+				printf("\nDigite 's' para jogar novamente, ou 'n' para sair.\n");
 		    		scanf("%s", &jogarNovamente);
 		    		fflush(stdin);
 				system("clear||cls");
