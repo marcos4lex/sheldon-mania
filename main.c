@@ -1,246 +1,93 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <locale.h>
+#include <time.h>
+#include <string.h>
+#include "functions.h"
 
-void barra();
+int menu();
+int opcUsuario = 0, opcComputador = 0;
+char altUsuario[10], altComputador[10], acao[15];
+int jogar = 1, usuarioVenceu = 0;
 
-
-int main (){
-	
-	int jogador, computador;
-	char jogarNovamente;
-	setlocale(LC_ALL, "");
-	system("clear||cls");
-	
-		do {
-			
-			//Menu do jogo
-			printf("_____________Sheldon Mania____________\n\n");
-			printf("1. PEDRA\n");
-			printf("2. PAPEL\n");
-			printf("3. TESOURA\n");
-			printf("4. LAGARTO\n");
-			printf("5. SPOCK\n");
-			printf("\nEscolha um número sabiamente meu caro: ");
-			scanf("%d", &jogador);
-			printf("\n____________________________________\n\n");
-			
-			switch (jogador) {
-			
-				case 1:
-					printf("Jogador escolheu PEDRA\n");
-					break;
-	
-				case 2:
-					printf("Jogador escolheu PAPEL\n");
-					break;
-	
-				case 3:
-					printf("Jogador escolheu TESOURA\n");
-					break;
-	
-				case 4:
-					printf("Jogador escolheu LAGARTO\n");
-					break;
-	
-				case 5:
-					printf("Jogador escolheu SPOCK\n");
-					break;
-	
-				default:
-					printf("OPÇÃO INVÁLIDA VOCÊ ESCOLHEU MEU CARO PADAWAN, TENTE OUTRA VEZ!!\n");
-				}
-		
-			
-				//Gera um nÃºmero aleatorio que Ã© atribuido a algum movimento para representar o computador 		
-				srand(time(NULL));
-				computador=("%d",rand()%5 + 1);
-				
-				//Caso haja um empate
-			   	if(jogador == computador)
-				printf("FOI UM EMPATE!!\n");
-			
-			
-			   //CondiÃ§Ã£o de vitoria de pedra sobre lagarto
-			   else if(jogador == 1 && computador == 4 || computador == 1 && jogador == 4) {
-			       if(jogador == 1){
-			       		printf("Computador escolheu LAGARTO");
-			       		barra();
-			        	printf("Pedra esmaga Lagarto, o jogador venceu!!");
-			        	barra();
-				   }
-			       		
-			       else {
-				    	printf("Computador escolheu PEDRA");
-				    	barra();
-				        printf("Pedra esmaga Lagarto, o computador venceu!!");
-				        barra();
-				   }			    	
-			   }
-				
-			   //CondiÃ§Ã£o de vitoria de pedra sobre tesoura
-			   else if(jogador == 1 && computador == 3 || computador == 1 && jogador == 3) {
-			        if(jogador == 1) {
-			        	printf("Computador escolheu TESOURA");
-			        	barra();
-			        	printf("Pedra amassa tesoura, o jogador venceu!!");
-			        	barra();
-					}
-			        	
-			        else {
-				        printf("Computador escolheu PEDRA");
-				        barra();
-				        printf("Pedra amassa tesoura, o computador venceu!!");
-				        barra();
-					}			        
-			   }
-			   
-			   //CondiÃ§Ã£o de vitoria de papel sobre pedra
-			   else if(jogador == 2 && computador == 1 || computador == 2 && jogador == 1) {
-			       if(jogador == 2) {
-			       	printf("Computador escolheu PEDRA");
-			       		barra();
-			        	printf("Papel cobre Pedra, O jogador venceu!!");
-			        	barra();
-				   }
-			       		
-			       else {
-			    		printf("Computador escolheu PAPEL");
-			        	barra();
-			        	printf("Papel cobre Pedra, O computador venceu!!");
-			        	barra();
-				   }			        
-			   }  
-			   
-			   //CondiÃ§Ã£o de vitoria de papel sobre spock
-			    else if(jogador == 2 && computador == 5 || computador == 2 && jogador == 5) {
-			    	if(jogador == 2) {
-			    		printf("Computador escolheu SPOCK");
-			    		barra();
-			    		printf("Papel refuta Spock, o jogador venceu!!");
-			    		barra();
-					}
-			    		
-			        else {
-			        	printf("Computador escolheu PAPEL");
-			    		barra();
-			        	printf("Papel refuta Spock, o computador venceu!!");
-			        	barra();
-					}			    	
-			   }
-			   
-			   //CondiÃ§Ã£o de vitoria de tesoura sobre papel
-			   else if(jogador == 3 && computador == 2 || computador == 3 && jogador == 2) {
-			       if(jogador == 3) {
-			       		printf("Computador escolheu PAPEL");
-			       		barra();
-			        	printf("Tesoura corta Papel, O jogador venceu!!");
-			        	barra();
-				   }
-			       		
-			       else {
-			    		printf("Computador escolheu TESOURA");
-			    		barra();
-			        	printf("Tesoura corta Papel, O computador venceu!!");
-			        	barra();
-				   }			    	
-			   }
-			   
-			   //CondiÃ§Ã£o de vitoria de tesoura sobre lagarto
-			   else if(jogador == 3 && computador == 4 || computador == 3 && jogador == 4) {
-			       if(jogador == 3) {
-			       		printf("Computador escolheu LAGARTO");
-			       		barra();
-			        	printf("Tesoura decapita Lagarto, o jogador venceu!!");
-			        	barra();
-				   }
-			       		
-			       else{
-			    		printf("Computador escolheu TESOURA");
-			    		barra();
-			        	printf("Tesoura decapita Lagarto, o computador venceu!!");
-			        	barra();
-				   }
-				}
-			   
-			   //CondiÃ§Ã£o de vitoria de lagarto sobre spock
-			   else if(jogador == 4 && computador == 5 || computador == 4 && jogador == 5) {
-			       if(jogador == 4) {
-			       		printf("Computador escolheu SPOCK");
-			       		barra();
-			        	printf("Lagarto envena Spock, o jogador venceu!!");
-			        	barra();
-				   }
-			       		
-			       else {
-			    		printf("Computador escolheu LAGARTO");
-			    		barra();
-			        	printf("Lagarto envena Spock, o computador venceu!!");
-			        	barra();
-				   }			    	
-			   }
-			   
-			   //CondiÃ§Ã£o de vitoria de lagarto sobre papel
-			   else if(jogador == 4 && computador == 2 || computador == 4 && jogador == 2) {
-			        if(jogador == 4) {
-			        	printf("Computador escolheu PAPEL");
-			        	barra();
-			        	printf("Lagarto come Papel, o jogador venceu!!");
-			        	barra();
-					}
-			        	
-			        else {
-			        	printf("Computador escolheu LAGARTO");
-			        	barra();
-			        	printf("Lagarto come Papel, o computador venceu!!");
-			        	barra();
-					}			        
-			   }
-			   
-			   //CondiÃ§Ã£o de vitoria de spock sobre tesoura
-			   else if(jogador == 5 && computador == 3 || computador == 5 && jogador == 3) {
-			       if(jogador == 5) {
-			       		printf("Computador escolheu TESOURA");
-			       		barra();
-			        	printf("Spock esmaga Tesoura, o jogador venceu!!");
-			        	barra();
-				   }
-			       		
-			       else {
-			    		printf("Computador escolheu SPOCK");
-			    		barra();
-			        	printf("Spock esmaga Tesoura, o computador venceu!!");
-			        	barra();
-				   }
-			   }   
-			   
-			    //CondiÃ§Ã£o de vitoria de spock sobre pedra
-			    else if(jogador == 5 && computador == 1 || computador == 5 && jogador == 1) {
-			        if(jogador == 5) {
-			        	printf("Computador escolheu PEDRA");
-			        	barra();
-			        	printf("Spock vaporiza Pedra, o jogador venceu!!");
-			        	barra();
-					}
-			        	
-			        else {
-			        	printf("Computador escolheu SPOCK");
-			        	barra();
-			        	printf("Spock vaporiza Pedra, o computador venceu!!");
-			        	barra();
-					}			        
-			   }
-			
-					printf("\nDigite 's' para jogar novamente, ou 'n' para sair.\n");
-		    		scanf("%s", &jogarNovamente);
-		    		fflush(stdin);
-					system("clear||cls");
-		} 		while (jogarNovamente == 's' || jogarNovamente == 'S');	
-	
-	return 0;	
+int main(){
+	menu();
+	return 0;
 }
 
-void barra(){
-	printf("\n____________________________________\n\n");
+int menu(){
+	setlocale(LC_ALL, "");
+	int opc;
+	
+	limpaTela();
+    printf("_____________Sheldon Mania____________\n\n");
+	printf("1. Jogar contra o computador.\n");
+	printf("2. Jogar contra outro jogador.\n");
+	printf("3. Sobre.\n");
+	scanf("%d", &opc);
+		
+		switch(opc){
+			case 1:
+				contraPc();
+				break;
+			case 2:
+				limpaTela();
+				printf("Ainda em Desenvolvimento.");
+				break;
+			case 3: 
+				limpaTela();
+				printf("Ola, eu me chamo Marcos Almeida e atualmente curso ADS pela ESTACIO-RJ e\n");
+				printf("sou também criador dessa versão de jogo que foi nomeado por mim de Sheldon Mania,\n");
+				printf("ele é uma expansao do clássico jogo pedra, papel e tesoura. Que atua sob\n");
+				printf("o mesmo princípio basico, mas inclui outras duas armas adicionais: o lagarto e Spock.\n");
+				printf("\nSendo assim então...\nPapel -> Pedra\nPedra -> Tesoura\nPedra -> Lagarto\nSpock -> Pedra\nTesoura -> Papel");
+				printf("\nLagarto -> Papel\nPapel -> Spock\nLagarto -> Spock\nSpock -> Tesoura\nTesoura -> Lagarto\n");
+				break;
+		}
+	return 0;
+}
+
+int contraPc(){
+	
+	while(jogar){
+		limpaTela();
+		printf("1. PEDRA\n");
+		printf("2. PAPEL\n");
+		printf("3. TESOURA\n");
+		printf("4. LAGARTO\n");
+		printf("5. SPOCK\n");
+		printf("\nEscolha um numero sabiamente meu caro: ");
+		scanf("%d", &opcUsuario);
+		
+		//Gera um numero aleatorio que e atribuido a jogada do computador.
+	    srand(time(NULL));
+	    opcComputador = rand()%5+1;
+	
+	    strcpy(altUsuario, devolverOpcao(opcUsuario)); //guarda a opcao do usuario.
+		strcpy(altComputador, devolverOpcao(opcComputador)); //guarda a opcao do computador.
+	
+	    printf("Jogador escolheu: %s \n", altUsuario);
+		printf("Computador escolheu: %s\n", altComputador);
+	
+	    //Verifica se houve empate
+	    if (opcUsuario == opcComputador) {
+			printf("Houve Empate!!\n");
+	    } else {
+	        usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
+	
+	    if(usuarioVenceu){
+	        strcpy(acao, devolverAcao(opcUsuario, opcComputador));
+	            printf("%s %s %s. Jogador venceu!!\n", altUsuario, acao, altComputador);
+	            barra();
+	        } else {
+	            strcpy(acao, devolverAcao(opcComputador, opcUsuario));
+	            printf("%s %s %s. Computador venceu!!\n", altComputador, acao, altUsuario);
+	            barra();
+	        }
+	    }
+	printf("Deseja jogar novamente?(1-SIM / 0-NAO) ");
+	scanf("%d", &jogar);
+	}
+	
+	return 0;
 }
