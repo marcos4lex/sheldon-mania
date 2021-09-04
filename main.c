@@ -22,7 +22,7 @@ int main (){
 			printf("3. TESOURA\n");
 			printf("4. LAGARTO\n");
 			printf("5. SPOCK\n");
-			printf("\nEscolha um n�mero sabiamente meu caro: ");
+			printf("\nEscolha um número sabiamente meu caro: ");
 			scanf("%d", &jogador);
 			printf("\n____________________________________\n\n");
 			
@@ -49,11 +49,11 @@ int main (){
 					break;
 	
 				default:
-					printf("OP��O INV�LIDA VOC� ESCOLHEU MEU CARO PADAWAN, TENTE OUTRA VEZ!!\n");
+					printf("OPÇÃO INVÁLIDA VOCÊ ESCOLHEU MEU CARO PADAWAN, TENTE OUTRA VEZ!!\n");
 				}
 		
 			
-				//Gera um número aleatorio que é atribuido a algum movimento para representar o computador 		
+				//Gera um nÃºmero aleatorio que Ã© atribuido a algum movimento para representar o computador 		
 				srand(time(NULL));
 				computador=("%d",rand()%5 + 1);
 				
@@ -62,7 +62,7 @@ int main (){
 				printf("FOI UM EMPATE!!\n");
 			
 			
-			   //Condição de vitoria de pedra sobre lagarto
+			   //CondiÃ§Ã£o de vitoria de pedra sobre lagarto
 			   else if(jogador == 1 && computador == 4 || computador == 1 && jogador == 4) {
 			       if(jogador == 1){
 			       		printf("Computador escolheu LAGARTO");
@@ -79,7 +79,7 @@ int main (){
 				   }			    	
 			   }
 				
-			   //Condição de vitoria de pedra sobre tesoura
+			   //CondiÃ§Ã£o de vitoria de pedra sobre tesoura
 			   else if(jogador == 1 && computador == 3 || computador == 1 && jogador == 3) {
 			        if(jogador == 1) {
 			        	printf("Computador escolheu TESOURA");
@@ -96,7 +96,7 @@ int main (){
 					}			        
 			   }
 			   
-			   //Condição de vitoria de papel sobre pedra
+			   //CondiÃ§Ã£o de vitoria de papel sobre pedra
 			   else if(jogador == 2 && computador == 1 || computador == 2 && jogador == 1) {
 			       if(jogador == 2) {
 			       	printf("Computador escolheu PEDRA");
@@ -113,7 +113,7 @@ int main (){
 				   }			        
 			   }  
 			   
-			   //Condição de vitoria de papel sobre spock
+			   //CondiÃ§Ã£o de vitoria de papel sobre spock
 			    else if(jogador == 2 && computador == 5 || computador == 2 && jogador == 5) {
 			    	if(jogador == 2) {
 			    		printf("Computador escolheu SPOCK");
@@ -130,7 +130,7 @@ int main (){
 					}			    	
 			   }
 			   
-			   //Condição de vitoria de tesoura sobre papel
+			   //CondiÃ§Ã£o de vitoria de tesoura sobre papel
 			   else if(jogador == 3 && computador == 2 || computador == 3 && jogador == 2) {
 			       if(jogador == 3) {
 			       		printf("Computador escolheu PAPEL");
@@ -147,7 +147,7 @@ int main (){
 				   }			    	
 			   }
 			   
-			   //Condição de vitoria de tesoura sobre lagarto
+			   //CondiÃ§Ã£o de vitoria de tesoura sobre lagarto
 			   else if(jogador == 3 && computador == 4 || computador == 3 && jogador == 4) {
 			       if(jogador == 3) {
 			       		printf("Computador escolheu LAGARTO");
@@ -164,7 +164,7 @@ int main (){
 				   }
 				}
 			   
-			   //Condição de vitoria de lagarto sobre spock
+			   //CondiÃ§Ã£o de vitoria de lagarto sobre spock
 			   else if(jogador == 4 && computador == 5 || computador == 4 && jogador == 5) {
 			       if(jogador == 4) {
 			       		printf("Computador escolheu SPOCK");
@@ -181,7 +181,7 @@ int main (){
 				   }			    	
 			   }
 			   
-			   //Condição de vitoria de lagarto sobre papel
+			   //CondiÃ§Ã£o de vitoria de lagarto sobre papel
 			   else if(jogador == 4 && computador == 2 || computador == 4 && jogador == 2) {
 			        if(jogador == 4) {
 			        	printf("Computador escolheu PAPEL");
@@ -198,7 +198,7 @@ int main (){
 					}			        
 			   }
 			   
-			   //Condição de vitoria de spock sobre tesoura
+			   //CondiÃ§Ã£o de vitoria de spock sobre tesoura
 			   else if(jogador == 5 && computador == 3 || computador == 5 && jogador == 3) {
 			       if(jogador == 5) {
 			       		printf("Computador escolheu TESOURA");
@@ -215,7 +215,7 @@ int main (){
 				   }
 			   }   
 			   
-			    //Condição de vitoria de spock sobre pedra
+			    //CondiÃ§Ã£o de vitoria de spock sobre pedra
 			    else if(jogador == 5 && computador == 1 || computador == 5 && jogador == 1) {
 			        if(jogador == 5) {
 			        	printf("Computador escolheu PEDRA");
