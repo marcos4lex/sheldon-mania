@@ -1,13 +1,3 @@
-void menu(){
-	printf("_____________Sheldon Mania____________\n\n");
-	printf("1. PEDRA\n");
-	printf("2. PAPEL\n");
-	printf("3. TESOURA\n");
-	printf("4. LAGARTO\n");
-	printf("5. SPOCK\n");
-	printf("\nEscolha um número sabiamente meu caro: ");
-}
-
 char *devolverOpcao(int escolha){
     char palavra[10];
     char *opcao = palavra;
@@ -74,6 +64,10 @@ char *devolverAcao(int opcUsuario, int opcComputador){
 
 void barra(){
 	printf("\n____________________________________\n\n");
+}
+
+void limpaTela(){
+	system("clear||cls");
 }
 
 int resultadoJogo(int opcUsuario, int opcComputador){
