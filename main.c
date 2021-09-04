@@ -20,7 +20,7 @@ int menu(){
 	int opc;
 	
 	limpaTela();
-    	printf("_____________Sheldon Mania____________\n\n");
+    printf("_____________Sheldon Mania____________\n\n");
 	printf("1. Jogar contra o computador.\n");
 	printf("2. Jogar contra outro jogador.\n");
 	printf("3. Sobre.\n");
