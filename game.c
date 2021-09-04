@@ -232,10 +232,10 @@ int main (){
 					}			        
 			   }
 			
-				printf("\nDigite 's' para jogar novamente, ou 'n' para sair.\n");
+					printf("\nDigite 's' para jogar novamente, ou 'n' para sair.\n");
 		    		scanf("%s", &jogarNovamente);
 		    		fflush(stdin);
-				system("clear||cls");
+					system("clear||cls");
 		} 		while (jogarNovamente == 's' || jogarNovamente == 'S');	
 	
 	return 0;	
