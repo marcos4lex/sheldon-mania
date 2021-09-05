@@ -11,10 +11,12 @@ void sobre();
 int opcUsuario = 0, opcComputador = 0;
 char altUsuario[10], altComputador[10], acao[15];
 int jogar = 1, usuarioVenceu = 0;
-int opc;
+
 
 
 int main(){
+	int opc;
+	
 	do{
 		limpaTela();
 		printf("_____________Sheldon Mania____________\n\n");
@@ -34,7 +36,7 @@ int main(){
 			case 3: 
 				sobre();
 				break;
-			case 4:
+			case 0:
 				break;
 		}
 	} while(opc != 0);
@@ -134,7 +136,7 @@ int contraJogador(){
 			barra();
 		} else {
 			usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
-		
+		barra();
 		if(usuarioVenceu){
 			strcpy(acao, devolverAcao(opcUsuario, opcComputador));
 			printf("%s %s %s. O jogador 1 venceu!!\n", altUsuario, acao, altComputador);
