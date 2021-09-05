@@ -6,11 +6,13 @@
 
 int contraPc();
 int contraJogador();
+void sobre();
 
 int opcUsuario = 0, opcComputador = 0;
 char altUsuario[10], altComputador[10], acao[15];
 int jogar = 1, usuarioVenceu = 0;
 int opc;
+
 
 int main(){
 	do{
@@ -30,19 +32,28 @@ int main(){
 				contraJogador();
 				break;
 			case 3: 
-				limpaTela();
-				printf("Ola, eu me chamo Marcos Almeida e atualmente curso ADS pela ESTACIO-RJ e\n");
-				printf("sou tambem criador dessa versao de jogo que foi nomeado por mim de Sheldon Mania,\n");
-				printf("ele e uma expansao do classico jogo pedra, papel e tesoura. Que atua sob\n");
-				printf("o mesmo principio basico, mas inclui outras duas armas adicionais: o lagarto e Spock.\n");
-				printf("\nSendo assim entao...\nPapel -> Pedra\nPedra -> Tesoura\nPedra -> Lagarto\nSpock -> Pedra\nTesoura -> Papel");
-				printf("\nLagarto -> Papel\nPapel -> Spock\nLagarto -> Spock\nSpock -> Tesoura\nTesoura -> Lagarto\n");
+				sobre();
 				break;
 			case 4:
 				break;
 		}
 	} while(opc != 0);
 	return 0;
+}
+
+void sobre(){
+	do{
+		limpaTela();
+		printf("Ola, eu me chamo Marcos Almeida e atualmente curso ADS pela ESTACIO-RJ e\n");
+		printf("sou tambem criador dessa versao de jogo que foi nomeado por mim de Sheldon Mania,\n");
+		printf("ele e uma expansao do classico jogo pedra, papel e tesoura. Que atua sob\n");
+		printf("o mesmo principio basico, mas inclui outras duas armas adicionais: o lagarto e Spock.\n");
+		printf("\nSendo assim entao...\nPapel -> Pedra\nPedra -> Tesoura\nPedra -> Lagarto\nSpock -> Pedra\nTesoura -> Papel");
+		printf("\nLagarto -> Papel\nPapel -> Spock\nLagarto -> Spock\nSpock -> Tesoura\nTesoura -> Lagarto\n");
+		barra();
+		printf("Digite 0 para voltar ao Menu.\n");
+		scanf("%d", &jogar);
+	} while (jogar);
 }
 
 int contraPc(){
@@ -64,13 +75,17 @@ int contraPc(){
 	
 	    strcpy(altUsuario, devolverOpcao(opcUsuario)); //guarda a opcao do usuario.
 		strcpy(altComputador, devolverOpcao(opcComputador)); //guarda a opcao do computador.
-	
-	    printf("Jogador escolheu: %s \n", altUsuario);
-		printf("Computador escolheu: %s\n", altComputador);
+		
+		barra();
+	    printf("---| O jogador escolheu: %s |---\n", altUsuario);
+		printf("---| O computador escolheu: %s |---\n", altComputador);
+		barra();
 	
 	    //Verifica se houve empate
 	    if (opcUsuario == opcComputador) {
-			printf("Houve Empate!!\n");
+	    	barra();
+			printf("---------| Houve Empate!! |---------\n");
+			barra();
 	    } else {
 	        usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
 	
@@ -84,7 +99,7 @@ int contraPc(){
 	            barra();
 	        }
 	    }
-		printf("Deseja jogar novamente?(1-SIM / 0-NAO) ");
+		printf("Deseja jogar novamente?(1-SIM / 0-NAO)\n");
 		scanf("%d", &jogar);
 		fflush(stdin);
 	} while(jogar != 0);
@@ -102,21 +117,21 @@ int contraJogador(){
 		printf("3. TESOURA\n");
 		printf("4. LAGARTO\n");
 		printf("5. SPOCK\n");
-		printf("\nEscolha do jogador 1: ");
+		printf("\n---| Escolha do jogador 1: ");
 		scanf("%d", &opcUsuario);
-		fflush(stdin);
-		printf("\nEscolha do jogador 2: ");
+		printf("---| Escolha do jogador 2: ");
 		scanf("%d", &opcComputador);
-		fflush(stdin);
 
 		strcpy(altUsuario, devolverOpcao(opcUsuario));
 		strcpy(altComputador, devolverOpcao(opcComputador));
-		
-		printf("O jogador 1 escolheu: %s\n", altUsuario);
-		printf("O jogador 2 escolheu: %s\n", altComputador);
+		barra();
+		printf("\n---| O jogador 1 escolheu: %s |--\n", altUsuario);
+		printf("---| O jogador 2 escolheu: %s |--\n", altComputador);
 		
 		if (opcUsuario == opcComputador) {
-			printf("Houve Empate!!\n");
+			barra();
+			printf("---------| Houve Empate!! |---------");
+			barra();
 		} else {
 			usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
 		
@@ -130,7 +145,7 @@ int contraJogador(){
 			barra();
 			}
 		}
-	printf("Deseja jogar novamente?(1-SIM / 0-NAO) ");
+	printf("Deseja jogar novamente?(1-SIM / 0-NAO)\n");
 	scanf("%d", &jogar);
 	fflush(stdin);
 	} while(jogar != 0);
