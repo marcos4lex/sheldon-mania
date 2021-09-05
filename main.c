@@ -4,8 +4,8 @@
 #include <string.h>
 #include "functions.h"
 
-void contraPc();
-void contraJogador();
+int contraPc();
+int contraJogador();
 
 int opcUsuario = 0, opcComputador = 0;
 char altUsuario[10], altComputador[10], acao[15];
@@ -13,13 +13,13 @@ int jogar = 1, usuarioVenceu = 0;
 int opc;
 
 int main(){
-	while(opc < 1 || opc > 4){
+	do{
 		limpaTela();
 		printf("_____________Sheldon Mania____________\n\n");
 		printf("1. Jogar contra o computador.\n");
 		printf("2. Jogar contra outro jogador.\n");
 		printf("3. Sobre.\n");
-		printf("4. Sair.\n");
+		printf("0. Sair.\n");
 		scanf("%d", &opc);
 			
 		switch(opc){
@@ -40,15 +40,13 @@ int main(){
 				break;
 			case 4:
 				break;
-			default: printf("Opcao invalida!!");
-				break;
 		}
-	}
+	} while(opc != 0);
 	return 0;
 }
 
-void contraPc(){
-	while(jogar){
+int contraPc(){
+	do{
 		limpaTela();
 		printf("Voce escolheu jogar contra o computador, boa sorte! xD\n");
 		printf("1. PEDRA\n");
@@ -86,16 +84,17 @@ void contraPc(){
 	            barra();
 	        }
 	    }
-	printf("Deseja jogar novamente?(1-SIM / 0-NAO) ");
-	scanf("%d", &jogar);
-	fflush(stdin);
-	}
+		printf("Deseja jogar novamente?(1-SIM / 0-NAO) ");
+		scanf("%d", &jogar);
+		fflush(stdin);
+	} while(jogar != 0);
+	return 0;
 }
 
-void contraJogador(){	
+int contraJogador(){	
 	// Aqui a variavel 'opcUsuario' atuara como 'jogador 1' 
 	// e a variavel 'opcComputador' atuara como 'jogador 2' 
-	while(jogar){
+	do{
 		limpaTela();		
 		printf("Voce escolheu jogar contra outro jogador, Boa sorte! xD!\n");
 		printf("1. PEDRA\n");
@@ -134,5 +133,6 @@ void contraJogador(){
 	printf("Deseja jogar novamente?(1-SIM / 0-NAO) ");
 	scanf("%d", &jogar);
 	fflush(stdin);
-	}
+	} while(jogar != 0);
+	return 0;
 }
