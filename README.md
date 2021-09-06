@@ -1,6 +1,6 @@
 # sheldon-mania
 
-<h2>Sobre o projeto<h2>
+<h2>Sobre o projeto</h2>
 
 Por ser um grande fã da serie de televisão "The Bigbang Theory" eu decidi fazer algo relacionado a ela. 
 Foi dai então que eu decidi fazer um jogo proposto pelo personagem Rajesh e adotado pelo Sheldon,
