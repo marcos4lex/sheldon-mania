@@ -128,7 +128,7 @@ int contraJogador(){
 		strcpy(altComputador, devolverOpcao(opcComputador));
 		barra();
 		printf("\n---| O jogador 1 escolheu: %s |--\n", altUsuario);
-		printf("---| O jogador 2 escolheu: %s |--\n", altComputador);
+		printf("---| O jogador 2 escolheu: %s |--\n\n", altComputador);
 		
 		if (opcUsuario == opcComputador) {
 			barra();
@@ -136,7 +136,7 @@ int contraJogador(){
 			barra();
 		} else {
 			usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
-		barra();
+		
 		if(usuarioVenceu){
 			strcpy(acao, devolverAcao(opcUsuario, opcComputador));
 			printf("%s %s %s. O jogador 1 venceu!!\n", altUsuario, acao, altComputador);
