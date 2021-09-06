@@ -46,9 +46,7 @@ int main(){
 void sobre(){
 	do{
 		limpaTela();
-		printf("Ola, eu me chamo Marcos Almeida e atualmente curso ADS pela ESTACIO-RJ e\n");
-		printf("sou tambem criador dessa versao de jogo que foi nomeado por mim de Sheldon Mania,\n");
-		printf("ele e uma expansao do classico jogo pedra, papel e tesoura. Que atua sob\n");
+		printf("O jogo e uma expansao do classico jogo pedra, papel e tesoura. Que atua sob\n");
 		printf("o mesmo principio basico, mas inclui outras duas armas adicionais: o lagarto e Spock.\n");
 		printf("\nSendo assim entao...\nPapel -> Pedra\nPedra -> Tesoura\nPedra -> Lagarto\nSpock -> Pedra\nTesoura -> Papel");
 		printf("\nLagarto -> Papel\nPapel -> Spock\nLagarto -> Spock\nSpock -> Tesoura\nTesoura -> Lagarto\n");
