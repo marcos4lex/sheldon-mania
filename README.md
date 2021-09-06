@@ -9,7 +9,7 @@ uma versão do jogo Pedra, Papel e Tesoura(Jokenpo), porém com a adição de du
 <h2>Como Funciona o Jogo</h2>
 
 Menu Principal:<p>
-Ao abrir o jogo você vai se deparar com um menu de 4 opções, sendo elas:
+Ao abrir o jogo você vai se deparar com o menu com 4 opções, e pode navegar por ele inserindo os números referente a opção que deseja, sendo elas:
 
 0. Sair
 1. Jogar contra o Computador
@@ -19,7 +19,6 @@ Ao abrir o jogo você vai se deparar com um menu de 4 opções, sendo elas:
 
 <h3>Jogar contra o Computador:</h3>
 
-Com o jogo aberto, você pode navegar por ele inserindo os números referente a opção que deseja.
 Então, inserindo o numero 1 e teclando enter você vai ser direcionado a opção de jogo contra o Computador, como indicado pelo menu.
 Aparecerá outro menu com as opções:
 1. PEDRA
