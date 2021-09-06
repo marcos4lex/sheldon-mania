@@ -11,10 +11,10 @@ uma versão do jogo Pedra, Papel e Tesoura(Jokenpo), porém com a adição de du
 Menu Principal:
 Ao abrir o jogo você vai se deparar com um menu com 4 opções, sendo elas:
 
+0. Sair
 1. Jogar contra o Computador
 2. Jogar contra outro Jogador
 3. Sobre
-00. Sair
 
 
 <h3>Jogar contra o Computador:</h3>
