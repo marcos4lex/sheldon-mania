@@ -27,7 +27,7 @@ Aparecerá outro menu com as opções:
 5. SPOCK
 
 Adicione novamente o número relativo a opção que deseja, de 1 a 5 e tecle enter. O computador sorteará também um número entre os
-5 dispostos para que seja feita a comparação. E ao final da comparação aparecerá a pergunta: "Deseja jogar novamente?(1-SIM / 0-NAO)"
+5 dispostos para que seja feita a comparação. E ao final da comparação aparecerá a pergunta: <i>"Deseja jogar novamente?(1-SIM / 0-NAO)"</i>
 Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novamente contra o computador, porém caso não, tecle 0 e você
 será redirecionado para o menu principal do jogo.
 
@@ -37,7 +37,7 @@ será redirecionado para o menu principal do jogo.
 No menu principal, Inserindo o número 2 e teclando enter você cai nessa opção de jogo, para jogar contra outro jogador.
 Aparecerá novamente as 5 opções de escolha, sendo elas, Pedra, Papel, Tesoura, Lagarto ou Spock, com seus respectivos números.
 O "jogador 1" insere primeiro seu número, e logo em seguida o "jogador 2" também insere o seu número para que seja feita a comparação.
-E como no outro menu, ao final da comparação dos resultados, aparecerá a mensagem: "Deseja jogar novamente?(1-SIM / 0-NAO)"
+E como no outro menu, ao final da comparação dos resultados, aparecerá a mensagem: <i>"Deseja jogar novamente?(1-SIM / 0-NAO)"</i>
 Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novamente contra o computador, porém caso não, tecle 0 e você
 será redirecionado para o menu principal do jogo.
 
