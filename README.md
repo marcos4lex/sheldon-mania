@@ -4,7 +4,7 @@ Sobre o projeto
 
 Por ser um grande fã da serie de televisão "The Bigbang Theory" eu decidi fazer algo relacionado a ela. 
 Foi dai então que eu decidi fazer um jogo proposto pelo personagem Rajesh e adotado pelo Sheldon,
-afim de decidir quem fica com uma sala nova no Instituto de Tecnologia da Califórnia (Caltech). A brincadeira é
+afim de decidir quem fica com uma sala nova no Instituto de Tecnologia da Califórnia (Caltech), e decidi nomea-lo de Sheldon Mania. A brincadeira é
 uma versão do jogo Pedra, Papel e Tesoura(Jokenpo), porém com a adição de duas outras opções, o Lagarto e o Spock.
 
 
