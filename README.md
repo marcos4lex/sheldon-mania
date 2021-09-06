@@ -6,7 +6,7 @@ afim de decidir quem fica com uma sala nova no Instituto de Tecnologia da Calif�
 uma versão do jogo Pedra, Papel e Tesoura(Jokenpo), porém com a adição de duas outras opções, o Lagarto e o Spock.
 
 
-<h3>Como Funciona o Jogo</h3>
+<h2>Como Funciona o Jogo</h2>
 
 Menu Principal:
 Ao abrir o jogo você vai se deparar com um menu com 4 opções, sendo elas:
