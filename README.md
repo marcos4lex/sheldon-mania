@@ -6,7 +6,7 @@ afim de decidir quem fica com uma sala nova no Instituto de Tecnologia da Calif�
 uma versão do jogo Pedra, Papel e Tesoura(Jokenpo), porém com a adição de duas outras opções, o Lagarto e o Spock.
 
 
-Como Funciona o Jogo
+<h3>Como Funciona o Jogo</h3>
 
 Menu Principal:
 Ao abrir o jogo você vai se deparar com um menu com 4 opções, sendo elas:
@@ -17,7 +17,7 @@ Ao abrir o jogo você vai se deparar com um menu com 4 opções, sendo elas:
 0. Sair
 
 
-Jogar contra o Computador:
+<h3>Jogar contra o Computador</h3>:
 
 Com o jogo aberto, você pode navegar por ele inserindo os números referente a opção que deseja.
 Então, inserindo o numero 1 e teclando enter você vai ser direcionado a opção de jogo contra o Computador, como indicado pelo menu.
@@ -34,7 +34,7 @@ Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novament
 será redirecionado para o menu principal do jogo.
 
 
-Jogar contra outro jogador:
+<h3>Jogar contra outro jogador</h3>:
 
 No menu principal, Inserindo o número 2 e teclando enter você cai nessa opção de jogo, para jogar contra outro jogador.
 Aparecerá novamente as 5 opções de escolha, sendo elas, Pedra, Papel, Tesoura, Lagarto ou Spock, com seus respectivos números.
@@ -43,7 +43,7 @@ E como no outro menu, ao final da comparação dos resultados, aparecerá a mens
 Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novamente contra o computador, porém caso não, tecle 0 e você
 será redirecionado para o menu principal do jogo.
 
-Sobre:
+<h3>Sobre:</h3>
 
 A opção Sobre conta brevemente sobre o jogo e sobre como ele funciona. Sendo:
 Papel cobre a Pedra
@@ -57,6 +57,6 @@ Lagarto envenena o Spock
 Spock quebra a Tesoura
 Tesoura decapita o Lagarto
 
-Sair
+<h3>Sair:</h3>
 
 E por fim, teclando 0 a partir do menu principal o jogo fecha.
