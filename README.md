@@ -17,7 +17,7 @@ Ao abrir o jogo você vai se deparar com um menu com 4 opções, sendo elas:
 0. Sair
 
 
-<h3>Jogar contra o Computador</h3>:
+<h3>Jogar contra o Computador:</h3>
 
 Com o jogo aberto, você pode navegar por ele inserindo os números referente a opção que deseja.
 Então, inserindo o numero 1 e teclando enter você vai ser direcionado a opção de jogo contra o Computador, como indicado pelo menu.
@@ -34,7 +34,7 @@ Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novament
 será redirecionado para o menu principal do jogo.
 
 
-<h3>Jogar contra outro jogador</h3>:
+<h3>Jogar contra outro jogador:</h3>
 
 No menu principal, Inserindo o número 2 e teclando enter você cai nessa opção de jogo, para jogar contra outro jogador.
 Aparecerá novamente as 5 opções de escolha, sendo elas, Pedra, Papel, Tesoura, Lagarto ou Spock, com seus respectivos números.
