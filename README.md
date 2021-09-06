@@ -29,6 +29,7 @@ Aparecerá outro menu com as opções:
 3. TESOURA
 4. LAGARTO
 5. SPOCK
+
 Adicione novamente o número relativo a opção que deseja, de 1 a 5 e tecle enter. O computador sorteará também um número entre os
 5 dispostos para que seja feita a comparação. E ao final da comparação aparecerá a pergunta: "Deseja jogar novamente?(1-SIM / 0-NAO)"
 Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novamente contra o computador, porém caso não, tecle 0 e você
