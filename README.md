@@ -14,7 +14,7 @@ Ao abrir o jogo você vai se deparar com um menu com 4 opções, sendo elas:
 1. Jogar contra o Computador
 2. Jogar contra outro Jogador
 3. Sobre
-0. Sair
+00. Sair
 
 
 <h3>Jogar contra o Computador:</h3>
