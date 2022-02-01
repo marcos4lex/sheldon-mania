@@ -5,13 +5,11 @@
 #include "functions.h"
 
 int contraPc();
-int contraJogador();
 void sobre();
 
 int opcUsuario = 0, opcComputador = 0;
 char altUsuario[10], altComputador[10], acao[15];
 int jogar = 1, usuarioVenceu = 0;
-
 
 
 int main(){
@@ -20,9 +18,8 @@ int main(){
 	do{
 		limpaTela();
 		printf("_____________Sheldon Mania____________\n\n");
-		printf("1. Jogar contra o computador.\n");
-		printf("2. Jogar contra outro jogador.\n");
-		printf("3. Sobre.\n");
+		printf("1. Jogar.\n");
+		printf("2. Sobre.\n");
 		printf("0. Sair.\n");
 		scanf("%d", &opc);
 			
@@ -30,10 +27,7 @@ int main(){
 			case 1:
 				contraPc();
 				break;
-			case 2:
-				contraJogador();
-				break;
-			case 3: 
+			case 2: 
 				sobre();
 				break;
 			case 0:
@@ -48,8 +42,8 @@ void sobre(){
 		limpaTela();
 		printf("O jogo e uma expansao do classico jogo pedra, papel e tesoura. Que atua sob\n");
 		printf("o mesmo principio basico, mas inclui outras duas armas adicionais: o lagarto e Spock.\n");
-		printf("\nSendo assim entao...\nPapel -> Pedra\nPedra -> Tesoura\nPedra -> Lagarto\nSpock -> Pedra\nTesoura -> Papel");
-		printf("\nLagarto -> Papel\nPapel -> Spock\nLagarto -> Spock\nSpock -> Tesoura\nTesoura -> Lagarto\n");
+		printf("\nSendo assim entao...\nPapel cobre a Pedra\nPedra quebra a Tesoura\nPedra esmaga o Lagarto\nSpock vaporiza a Pedra\nTesoura corta o Papel");
+		printf("\nLagarto come o Papel\nPapel desmente o Spock\nLagarto envenena o Spock\nSpock quebra a Tesoura\nTesoura decapta o Lagarto\n");
 		barra();
 		printf("Digite 0 para voltar ao Menu.\n");
 		scanf("%d", &jogar);
@@ -70,84 +64,38 @@ int contraPc(){
 		fflush(stdin);
 		
 		//Gera um numero aleatorio que e atribuido a jogada do computador.
-	    srand(time(NULL));
-	    opcComputador = rand()%5+1;
+	  srand(time(NULL));
+	  opcComputador = rand()%5+1;
 	
-	    strcpy(altUsuario, devolverOpcao(opcUsuario)); //guarda a opcao do usuario.
+	  strcpy(altUsuario, devolverOpcao(opcUsuario)); //guarda a opcao do usuario.
 		strcpy(altComputador, devolverOpcao(opcComputador)); //guarda a opcao do computador.
 		
 		barra();
-	    printf("---| O jogador escolheu: %s |---\n", altUsuario);
+	  printf("---| O jogador escolheu: %s |---\n", altUsuario);
 		printf("---| O computador escolheu: %s |---\n", altComputador);
 		barra();
 	
-	    //Verifica se houve empate
-	    if (opcUsuario == opcComputador) {
+	  //Verifica se houve empate
+	  if (opcUsuario == opcComputador) {
 	    	barra();
 			printf("---------| Houve Empate!! |---------\n");
 			barra();
-	    } else {
-	        usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
+	  } else {
+	    usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
 	
-	    if(usuarioVenceu){
-	        strcpy(acao, devolverAcao(opcUsuario, opcComputador));
-	            printf("%s %s %s. Jogador venceu!!\n", altUsuario, acao, altComputador);
-	            barra();
-	        } else {
-	            strcpy(acao, devolverAcao(opcComputador, opcUsuario));
-	            printf("%s %s %s. Computador venceu!!\n", altComputador, acao, altUsuario);
-	            barra();
-	        }
+	  if(usuarioVenceu){
+	  	strcpy(acao, devolverAcao(opcUsuario, opcComputador));
+	    printf("%s %s %s. Jogador venceu!!\n", altUsuario, acao, altComputador);
+	    barra();
+	  } else {
+	    strcpy(acao, devolverAcao(opcComputador, opcUsuario));
+	    printf("%s %s %s. Computador venceu!!\n", altComputador, acao, altUsuario);
+	    barra();
 	    }
+	  }
 		printf("Deseja jogar novamente?(1-SIM / 0-NAO)\n");
 		scanf("%d", &jogar);
 		fflush(stdin);
-	} while(jogar != 0);
-	return 0;
-}
-
-int contraJogador(){	
-	// Aqui a variavel 'opcUsuario' atuara como 'jogador 1' 
-	// e a variavel 'opcComputador' atuara como 'jogador 2' 
-	do{
-		limpaTela();		
-		printf("Voce escolheu jogar contra outro jogador, Boa sorte! xD!\n");
-		printf("1. PEDRA\n");
-		printf("2. PAPEL\n");
-		printf("3. TESOURA\n");
-		printf("4. LAGARTO\n");
-		printf("5. SPOCK\n");
-		printf("\n---| Escolha do jogador 1: ");
-		scanf("%d", &opcUsuario);
-		printf("---| Escolha do jogador 2: ");
-		scanf("%d", &opcComputador);
-
-		strcpy(altUsuario, devolverOpcao(opcUsuario));
-		strcpy(altComputador, devolverOpcao(opcComputador));
-		barra();
-		printf("\n---| O jogador 1 escolheu: %s |--\n", altUsuario);
-		printf("---| O jogador 2 escolheu: %s |--\n\n", altComputador);
-		
-		if (opcUsuario == opcComputador) {
-			barra();
-			printf("---------| Houve Empate!! |---------");
-			barra();
-		} else {
-			usuarioVenceu = resultadoJogo(opcUsuario, opcComputador);
-		
-		if(usuarioVenceu){
-			strcpy(acao, devolverAcao(opcUsuario, opcComputador));
-			printf("%s %s %s. O jogador 1 venceu!!\n", altUsuario, acao, altComputador);
-			barra();
-		} else {
-			strcpy(acao, devolverAcao(opcComputador, opcUsuario));
-			printf("%s %s %s. O jogador 2 venceu!!\n", altComputador, acao, altUsuario);
-			barra();
-			}
-		}
-	printf("Deseja jogar novamente?(1-SIM / 0-NAO)\n");
-	scanf("%d", &jogar);
-	fflush(stdin);
 	} while(jogar != 0);
 	return 0;
 }

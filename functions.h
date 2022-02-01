@@ -2,9 +2,9 @@ char *devolverOpcao(int escolha){
     char palavra[10];
     char *opcao = palavra;
     switch(escolha){
-        case 1:
-            strcpy(palavra, "PEDRA");
-            break;
+    case 1:
+      strcpy(palavra, "PEDRA");
+      break;
 		case 2:
 			strcpy(palavra, "PAPEL");
 			break;
