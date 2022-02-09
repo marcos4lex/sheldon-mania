@@ -11,7 +11,7 @@ Ao abrir o jogo você é redirecionado para o menu principal, e pode navegar por
 1. Jogar contra o Computador
 2. Sobre
 
-==== img =====
+<img src="/img/img1.png">
 
 <h3>Jogar:</h3>
 
@@ -28,7 +28,9 @@ Adicione novamente o número relativo a opção que deseja, de 1 a 5 e tecle ent
 Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novamente contra o computador, porém caso não, tecle 0 e você
 será redirecionado para o menu principal do jogo.
 
-==== img =====
+<img src="/img/img2.png">
+
+<img src="/img/img3.png">
 
 <h3>Sobre:</h3>
 
