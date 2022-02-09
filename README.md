@@ -61,8 +61,8 @@ E por fim, teclando 0 a partir do menu principal o jogo fecha.
 <a href="https://replit.com/@marcos4lex/sheldon-mania#.replit">Clique aqui</a> para jogar!!
 
 Quando você for redirecionado para o link acima, você irá se deparar com essa tela:
-<div>
-  <img src="/img/howto1.png" width="600">
-</div>
+
+<img src="/img/howto1.png" width="600">
+
 Basta clicar no botão grande e verde no topo direito da imagem para testar, 
 Boa diversão!!! :DD
