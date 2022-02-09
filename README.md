@@ -11,7 +11,10 @@ Ao abrir o jogo você é redirecionado para o menu principal, e pode navegar por
 1. Jogar contra o Computador
 2. Sobre
 
-==== img =====
+<div align="center">
+  <img src="/img/img1.png">
+</div>
+
 
 <h3>Jogar:</h3>
 
@@ -28,7 +31,13 @@ Adicione novamente o número relativo a opção que deseja, de 1 a 5 e tecle ent
 Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novamente contra o computador, porém caso não, tecle 0 e você
 será redirecionado para o menu principal do jogo.
 
-==== img =====
+<div align="center">
+  <img src="/img/img2.png">
+</div>
+
+<div align="center">
+  <img src="/img/img3.png">
+</div>
 
 <h3>Sobre:</h3>
 
@@ -48,5 +57,5 @@ Tesoura decapita o Lagarto
 
 E por fim, teclando 0 a partir do menu principal o jogo fecha.
 
-<h3>Links</h3>
-<a href="#">Clique aqui</a> para jogar!!
+<h2>Jogue você mesmo! Espero que se divirta</h2>
+<a href="https://replit.com/@marcos4lex/sheldon-mania#.replit">Clique aqui</a> para jogar!!
