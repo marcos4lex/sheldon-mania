@@ -16,7 +16,7 @@ Ao abrir o jogo você é redirecionado para o menu principal, e pode navegar por
 </div>
 
 
-<h2>Jogar:</h2>
+<h3>Jogar:</h3>
 
 Então, inserindo o numero 1 e teclando enter você vai ser direcionado a de jogar contra o Computador, como indicado pelo menu.
 Aparecerá outro menu com as opções:
@@ -39,7 +39,7 @@ será redirecionado para o menu principal do jogo.
   <img src="/img/img3.png">
 </div>
 
-<h2>Sobre:</h2>
+<h3>Sobre:</h3>
 
 A opção Sobre conta brevemente sobre o jogo e sobre como ele funciona. Sendo:
 Papel cobre a Pedra
@@ -53,9 +53,9 @@ Lagarto envenena o Spock
 Spock quebra a Tesoura
 Tesoura decapita o Lagarto
 
-<h2>Sair:</h2>
+<h3>Sair:</h3>
 
 E por fim, teclando 0 a partir do menu principal o jogo fecha.
 
-<h2>Links</h2>
+<h2>Jogue você mesmo! Espero que se divirta</h2>
 <a href="https://replit.com/@marcos4lex/sheldon-mania#.replit">Clique aqui</a> para jogar!!
