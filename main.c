@@ -53,7 +53,7 @@ void sobre(){
 int contraPc(){
 	do{
 		limpaTela();
-		printf("Voce escolheu jogar contra o computador, boa sorte! xD\n");
+		printf("Boa sorte! E que os jogos comecem!xD\n");
 		printf("1. PEDRA\n");
 		printf("2. PAPEL\n");
 		printf("3. TESOURA\n");
