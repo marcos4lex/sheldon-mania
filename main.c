@@ -21,6 +21,7 @@ int main(){
 		printf("1. Jogar.\n");
 		printf("2. Sobre.\n");
 		printf("0. Sair.\n");
+    printf("Escolha um numero referente a sua opcao: ");
 		scanf("%d", &opc);
 			
 		switch(opc){
@@ -41,11 +42,9 @@ void sobre(){
 	do{
 		limpaTela();
 		printf("O jogo e uma expansao do classico jogo pedra, papel e tesoura. Que atua sob\n");
-		printf("o mesmo principio basico, mas inclui outras duas armas adicionais: o lagarto e Spock.\n");
-		printf("\nSendo assim entao...\nPapel cobre a Pedra\nPedra quebra a Tesoura\nPedra esmaga o Lagarto\nSpock vaporiza a Pedra\nTesoura corta o Papel");
-		printf("\nLagarto come o Papel\nPapel desmente o Spock\nLagarto envenena o Spock\nSpock quebra a Tesoura\nTesoura decapta o Lagarto\n");
+		printf("o mesmo principio basico, mas inclui outras duas armas adicionais: o lagarto e Spock.\n\nSendo assim entao...\nPapel cobre a Pedra\nPedra quebra a Tesoura\nSpock vaporiza a Pedra\nTesoura corta o Papel\nLagarto come o Papel\nPedra esmaga o Lagarto\nPapel desmente o Spock\nLagarto envenena o Spock\nSpock quebra a Tesoura\nTesoura decapta o Lagarto");
 		barra();
-		printf("Digite 0 para voltar ao Menu.\n");
+		printf("Digite 0 para voltar ao Menu: ");
 		scanf("%d", &jogar);
 	} while (jogar);
 }
@@ -77,7 +76,7 @@ void contraPc(){
 	
 	  //Verifica se houve empate
 	  if (opcUsuario == opcComputador) {
-	    	barra();
+	    barra();
 			printf("---------| Houve Empate!! |---------\n");
 			barra();
 	  } else {
