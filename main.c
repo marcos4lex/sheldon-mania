@@ -4,7 +4,7 @@
 #include <string.h>
 #include "functions.h"
 
-int contraPc();
+void contraPc();
 void sobre();
 
 int opcUsuario = 0, opcComputador = 0;
@@ -50,7 +50,7 @@ void sobre(){
 	} while (jogar);
 }
 
-int contraPc(){
+void contraPc(){
 	do{
 		limpaTela();
 		printf("Boa sorte! E que os jogos comecem!xD\n");
@@ -97,5 +97,4 @@ int contraPc(){
 		scanf("%d", &jogar);
 		fflush(stdin);
 	} while(jogar != 0);
-	return 0;
 }
