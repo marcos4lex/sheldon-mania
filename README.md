@@ -76,7 +76,3 @@ Para rodar este jogo em sua máquina, você precisará de um compilador C (como 
    ```
 
 ---
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Marcos Alex**.
