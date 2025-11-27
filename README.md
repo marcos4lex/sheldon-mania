@@ -1,68 +1,82 @@
-<h2>Sobre o projeto</h2>
+# 🖖 Sheldon Mania
 
-Por ser um grande fã da serie de televisão "The Bigbang Theory" eu decidi fazer algo relacionado a ela. Foi dai então que eu decidi fazer um jogo que ficou muito conhecido na série(pedra-papel-tesoura-lagarto-spock) e adotado por muitos geeks, e decidi nomea-lo de Sheldon Mania. O jogo é uma versão do jogo Pedra, Papel e Tesoura(Jokenpo), porém com a adição de duas outras opções, o Lagarto e o Spock.
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
 
+> "Pedra, Papel, Tesoura, Lagarto, Spock!"
 
-<h2>Como Funciona o Jogo</h2>
+## 📖 Sobre o Projeto
 
-Ao abrir o jogo você é redirecionado para o menu principal, e pode navegar por ele inserindo os números referente a opção que deseja, sendo elas:
+**Sheldon Mania** é uma implementação em C do famoso jogo **Pedra-Papel-Tesoura-Lagarto-Spock**, popularizado pelo personagem Sheldon Cooper na série de TV *The Big Bang Theory*.
 
-0. Sair
-1. Jogar contra o Computador
-2. Sobre
+Este projeto foi desenvolvido como uma forma divertida de praticar lógica de programação e estruturas condicionais em C, trazendo uma variação mais complexa e estratégica do clássico Jokenpô.
 
+---
 
-<img src="/img/img1.png">
+## 🎮 Como Funciona
 
+O jogo é uma expansão do clássico "Pedra, Papel e Tesoura", adicionando duas novas variáveis: **Lagarto** e **Spock**. Isso reduz as chances de empate e aumenta a complexidade das combinações.
 
+### Regras do Jogo
 
-<h3>Jogar:</h3>
+As regras de vitória são as seguintes:
 
-Então, inserindo o numero 1 e teclando enter você vai ser direcionado a de jogar contra o Computador, como indicado pelo menu.
-Aparecerá outro menu com as opções:
-1. PEDRA
-2. PAPEL
-3. TESOURA
-4. LAGARTO
-5. SPOCK
+| Vencedor | Ação | Perdedor |
+| :---: | :---: | :---: |
+| **Tesoura** ✂️ | Corta | Papel 📄 |
+| **Papel** 📄 | Cobre | Pedra 🪨 |
+| **Pedra** 🪨 | Esmaga | Lagarto 🦎 |
+| **Lagarto** 🦎 | Envenena | Spock 🖖 |
+| **Spock** 🖖 | Esmaga | Tesoura ✂️ |
+| **Tesoura** ✂️ | Decapita | Lagarto 🦎 |
+| **Lagarto** 🦎 | Come | Papel 📄 |
+| **Papel** 📄 | Refuta | Spock 🖖 |
+| **Spock** 🖖 | Vaporiza | Pedra 🪨 |
+| **Pedra** 🪨 | Quebra | Tesoura ✂️ |
 
-Adicione novamente o número relativo a opção que deseja, de 1 a 5 e tecle enter. O computador sorteará também um número entre os
-5 dispostos para que seja feita a comparação. E ao final da comparação aparecerá a pergunta: <i>"Deseja jogar novamente?(1-SIM / 0-NAO)"</i>
-Caso deseje jogar no mesmo modo de jogo, tecle 1 e enter, você jogará novamente contra o computador, porém caso não, tecle 0 e você
-será redirecionado para o menu principal do jogo.
+---
 
+## 🖥️ Interface do Jogo
 
-<img src="/img/img2.png">
+### Menu Principal
+Ao iniciar o jogo, você verá o menu principal onde pode escolher entre jogar, ver as regras ou sair.
 
+![Menu Principal](img/img1.png)
 
-<img src="/img/img3.png">
+### Jogando contra o Computador
+Escolha sua jogada e veja se você consegue vencer a máquina!
 
+![Gameplay](img/img2.png)
 
-<h3>Sobre:</h3>
+### Resultado
+O jogo mostra quem ganhou a rodada e pergunta se você deseja jogar novamente.
 
-A opção Sobre conta brevemente sobre o jogo e sobre como ele funciona. Sendo:
-Papel cobre a Pedra
-Pedra quebra a Tesoura
-Pedra esmaga o Lagarto
-Spock vaporiza a Pedra
-Tesoura corta o Papel
-Lagarto come o Papel
-Papel desmente o Spock
-Lagarto envenena o Spock
-Spock quebra a Tesoura
-Tesoura decapita o Lagarto
+![Resultado](img/img3.png)
 
-<h3>Sair:</h3>
+---
 
-E por fim, teclando 0 a partir do menu principal o jogo fecha.
+## 🚀 Como Executar
 
-<h2>Jogue você mesmo! Espero que se divirta</h2>
+Para rodar este jogo em sua máquina, você precisará de um compilador C (como o GCC).
 
-<a href="https://replit.com/@marcos4lex/sheldon-mania#.replit">Clique aqui</a> para jogar!!
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/marcos4lex/sheldon-mania.git
+   cd sheldon-mania
+   ```
 
-Quando você for redirecionado para o link acima, você irá se deparar com essa tela:
+2. **Compile o código:**
+   ```bash
+   gcc main.c -o sheldon-mania
+   ```
 
-<img src="/img/howto1.png" width="600">
+3. **Execute o jogo:**
+   ```bash
+   ./sheldon-mania
+   ```
 
-Basta clicar no botão grande e verde no topo direito da imagem para testar, 
-Boa diversão!!! :DD
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Marcos Alex**.
